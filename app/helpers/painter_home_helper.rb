@@ -1,0 +1,2 @@
+module PainterHomeHelper
+end
