@@ -1,5 +1,5 @@
 class Artpiece < ActiveRecord::Base
-  has_one :style
-  has_many :reproartist, through: :style
+  belongs_to :style
+  has_many :reproartists, through: :style
 
 end

@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
+  devise_for :reproartists
   root "welcome#index"
 
+  resources :reproartists, :only => [:update]
+  get 'profile', to: 'reproartists#edit', :as => :profile
+
+  resources :reproartists
 
   get 'welcome/', to: 'welcome#index'
+
+  get 'about', to: 'welcome#about'
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,7 +1,8 @@
 class WelcomeController < ApplicationController
 
   def index
-    @artpieces = params[:q] :Artpiece.all
+    #display all artpieces here
+    @artpieces = Artpiece.all
   end
 
 end

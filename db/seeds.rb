@@ -12,13 +12,29 @@
 #   {title: "Girl with the Pearl Earring", artist: "Vermeer", style: "Dutch Baroque"}
 #   ])
 
-Artpiece.create(:title => 'Starry Night', :style => 'Post-Impressionist', :artist => 'Vincent Van Gogh', :image => 'https://en.wikipedia.org/wiki/The_Starry_Night#/media/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg')
-Artpiece.create(:title => 'Guernica', :style => 'Abstract', :artist => 'Pablo Picasso', :image => 'https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg')
-Artpiece.create(:title => 'The Piano Lesson', :style => 'Dutch-Baroque', :artist => 'Johannes Vermeer', :image => 'https://en.wikipedia.org/wiki/Johannes_Vermeer#/media/File:Jan_Vermeer_van_Delft_014.jpg')
-Artpiece.create(:title => 'Impression, Sunrise', :style => 'Impressionist', :artist => 'Claude Monet', :image => 'https://en.wikipedia.org/wiki/Claude_Monet#/media/File:Claude_Monet,_Impression,_soleil_levant.jpg')
-Artpiece.create(:title => 'Salisbury Cathedral, Bishops Grounds', :style  =>'Romantic' :artist => 'John Constable',  :image => 'https://en.wikipedia.org/wiki/John_Constable#/media/File:John_Constable_-_Salisbury_Cathedral_from_the_Bishop%27s_Garden_-_Google_Art_Project.jpg')
+style1 = Style.create(:name => 'Post-Impressionist')
+style2 = Style.create(:name => 'Abstract' )
+style3 = Style.create(:name => 'Dutch-Baroque' )
+style4 = Style.create(:name =>  'Impressionist' )
+style5 = Style.create(:name => 'Romantic' )
 
-style.create[:style => 1, : => 'Paris' ]
-m
+Artpiece.create(:title => 'Starry Night', :style => style1, :artist => 'Vincent Van Gogh',
+:image => File.new('db/artimages/StarryNight.jpg'))
+
+
+Artpiece.create(:title => 'Guernica', :style => style2, :artist => 'Pablo Picasso',
+:image => File.new("db/artimages/Guernica.jpg"))
+
+
+Artpiece.create(:title => 'The Piano Lesson', :style => style3, :artist => 'Johannes Vermeer',
+:image => File.new("db/artimages/PianoLesson.jpg"))
+
+
+Artpiece.create(:title => 'Impression, Sunrise', :style => style4, :artist => 'Claude Monet',
+:image => File.new("db/artimages/MonetSunrise.jpg"))
+
+
+Artpiece.create(:title => 'Salisbury Cathedral, Bishops Grounds', :style  => style5, :artist => 'John Constable',
+:image => File.new("db/artimages/ConstableCathedral.jpg"))
 
 puts "Artpieces and Styles, created"

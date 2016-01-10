@@ -3,8 +3,9 @@ class CreateArtpieces < ActiveRecord::Migration
     create_table :artpieces do |t|
       t.string :title
       t.string :artist
-      t.string :style
+      t.integer :style_id
       t.integer :painting_id
+      t.string :image
 
       t.timestamps null: false
     end

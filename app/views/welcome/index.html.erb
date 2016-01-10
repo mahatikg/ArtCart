@@ -1,7 +1,19 @@
-<h1> Welcome to ArtCart </h1><br>
-<li>  </li>
-<h1>Paintings List</h1>
+<h1> Welcome </h1><br>
+<h2> Sign up you skills to be hired as a Reproduction Artist! </h2>
 
-<%  @artpiece_list.each do |artpiece| %>
-  <%= artpiece.title %>
+<%if signed_in? && !(created_style_selection?) %>
+<% create_reproartist_data %>
+
 <% end %>
+
+
+<section>
+    <% @artpieces.each do |artpiece| %>
+
+    <li><%= artpiece.image%> </li>
+    <h1><strong><%= artpiece.title %></strong></h1>
+    <li><%= artpiece.artist%> </li>
+    <li><%= artpiece.style.name %> </li>
+
+    <% end %>
+</section>

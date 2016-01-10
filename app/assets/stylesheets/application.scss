@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+ *{
+   margin: 10;
+   padding: 5;
+ }
+
+
+nav.navbar.navbar-default {
+	background: beige;
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > li {
+	color: white;
+}
+
+.navbar-nav {
+    margin: 5.5px 0;
+}
+
+.navbar-default .navbar-nav > li {
+	text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: beige;
+}
+
+.navbar-nav {
+	@media (min-width: 600px) {
+    float: right;
+    padding-right: 5em;
+	}
+}
+
+  img {
+    max-width: 100%;
+  }
+
+.gallery {
+    text-align: right;
+}
+
+.gallery-item {
+    height: 650px;
+    width: 450px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-bottom: 10px;
+    @media (max-width 800px) {
+      display: block;
+      width: 90%;
+    }
+  }
+
+
+.gallery-item img {
+    display: block;
+    margin: 2;
+    padding-bottom: 5px;
+}
+
+#page_nav a{
+  line-height:60px;
+  color:#fff;
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+}

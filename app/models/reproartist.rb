@@ -1,7 +1,9 @@
 class Reproartist < ActiveRecord::Base
-
-  has_many :styles
-  has_many :artpieces, through: :styles
-
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
+  belongs_to :style
+  has_many :artpieces, through: :style 
 
 end

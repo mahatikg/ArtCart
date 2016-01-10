@@ -1,12 +1,9 @@
 class ArtPiecesController < ApplicationController
   #CONTROLLER THAT IS BASICALLY A GALLERY VIEW OF ALL THE PIECES OF ART
   def index
-    @artpiece = Artpice.all
+    @artpiece = Artpiece.all
   end
-
-  def new
-    @artpiece = Artpiece.new
-  end
+  
 end
   # def show
   # end

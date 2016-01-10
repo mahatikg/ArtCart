@@ -1,0 +1,11 @@
+<h1> Please Pick the Style of your Expertise </h1>
+
+
+<p> Please Pick the Style of your Expertise </p>
+
+<%= form_for @reproartist do |f| %>
+  <%= f.label :style %>
+  <%= f.collection_select(:style_id, Style.all, :id, :name) %>
+  <%= f.submit %>
+
+<% end %>
