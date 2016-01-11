@@ -18,7 +18,7 @@
 @import "bootstrap";
 
  *{
-   margin: 10;
+   margin: 5;
    padding: 5;
  }
 
@@ -33,7 +33,7 @@ nav.navbar.navbar-default {
 }
 
 .navbar-nav {
-    margin: 5.5px 0;
+    margin: 3.5px 0;
 }
 
 .navbar-default .navbar-nav > li {
@@ -45,7 +45,7 @@ nav.navbar.navbar-default {
 }
 
 .navbar-nav {
-	@media (min-width: 600px) {
+	@media (min-width: 630px) {
     float: right;
     padding-right: 5em;
 	}
@@ -60,11 +60,11 @@ nav.navbar.navbar-default {
 }
 
 .gallery-item {
-    height: 650px;
+    height: 550px;
     width: 450px;
     vertical-align: middle;
     display: inline-block;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     @media (max-width 800px) {
       display: block;
       width: 90%;

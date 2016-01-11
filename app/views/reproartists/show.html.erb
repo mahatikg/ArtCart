@@ -1,7 +1,11 @@
-<h1> ARTISTS PROFILE PAGE </h2>
 
-<p> You have indicated you are a skilled reproductionist of the following styles: </p>
+<space><p> You have indicated you are a skilled reproductionist of the following styles: </p>
 
+<%= @reproartist.style_id %><br>
+<%= Style.find(@reproartist.style_id).name %><br>
+
+
+<%= Artpiece.find(@reproartist.style_id).image %>
 
   <p> Consumers interested in comissioning these styles of art will contact you via: </p>
   <%= @reproartist.email %>

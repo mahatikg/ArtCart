@@ -1,19 +1,21 @@
-<h1> Welcome </h1><br>
-<h2> Sign up you skills to be hired as a Reproduction Artist! </h2>
+<h2><center>Browse our Art Gallery to see popular styles and commissions</center></h2><br>
+
+
 
 <%if signed_in? && !(created_style_selection?) %>
 <% create_reproartist_data %>
-
 <% end %>
 
 
 <section>
+<center>
     <% @artpieces.each do |artpiece| %>
-
-    <li><%= artpiece.image%> </li>
-    <h1><strong><%= artpiece.title %></strong></h1>
-    <li><%= artpiece.artist%> </li>
-    <li><%= artpiece.style.name %> </li>
+    <h3><strong><%= artpiece.title %></strong></h3>
+    <p><%= artpiece.image %></p>
+    <p><%= artpiece.artist%> </p>
+    <p><%= artpiece.style.name %> </p>
+    <br>
 
     <% end %>
+  </center>
 </section>

@@ -5,4 +5,7 @@ class WelcomeController < ApplicationController
     @artpieces = Artpiece.all
   end
 
+  def about
+  end
+
 end
