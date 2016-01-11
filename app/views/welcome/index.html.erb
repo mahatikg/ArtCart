@@ -11,7 +11,7 @@
 <center>
     <% @artpieces.each do |artpiece| %>
     <h3><strong><%= artpiece.title %></strong></h3>
-    <p><%= artpiece.image %></p>
+    <p><%= image_tag artpiece.image.url %></p>
     <p><%= artpiece.artist%> </p>
     <p><%= artpiece.style.name %> </p>
     <br>
