@@ -9,10 +9,6 @@ class ReproartistsController < ApplicationController
     end
 
 
-    def about
-    end
-
-
     def profile
       #@reproartist = current_reproartist(:artpiece)
     end

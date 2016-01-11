@@ -18,18 +18,9 @@ ActiveRecord::Schema.define(version: 20160108004148) do
     t.string   "artist"
     t.integer  "style_id"
     t.integer  "painting_id"
-    t.string  "image"
+    t.string   "image"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-  end
-
-  create_table "painterhomes", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "painter_id"
-    t.string   "style"
-    t.text     "blurb"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "reproartists", force: :cascade do |t|

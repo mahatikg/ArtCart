@@ -19,22 +19,22 @@ style4 = Style.create(:name =>  'Impressionist' )
 style5 = Style.create(:name => 'Romantic' )
 
 Artpiece.create(:title => 'Starry Night', :style => style1, :artist => 'Vincent Van Gogh',
-:image => File.new('db/artimages/StarryNight.jpg'))
+:image => File.new('db/artimages/StarryNight.jpeg'))
 
 
 Artpiece.create(:title => 'Guernica', :style => style2, :artist => 'Pablo Picasso',
-:image => File.new("db/artimages/Guernica.jpg"))
+:image => File.new("db/artimages/Guernica.jpeg"))
 
 
 Artpiece.create(:title => 'The Piano Lesson', :style => style3, :artist => 'Johannes Vermeer',
-:image => File.new("db/artimages/PianoLesson.jpg"))
+:image => File.new("db/artimages/PianoLesson.jpeg"))
 
 
 Artpiece.create(:title => 'Impression, Sunrise', :style => style4, :artist => 'Claude Monet',
-:image => File.new("db/artimages/MonetSunrise.jpg"))
+:image => File.new("db/artimages/MonetSunrise.jpeg"))
 
 
 Artpiece.create(:title => 'Salisbury Cathedral, Bishops Grounds', :style  => style5, :artist => 'John Constable',
-:image => File.new("db/artimages/ConstableCathedral.jpg"))
+:image => File.new("db/artimages/ConstableCathedral.jpeg"))
 
 puts "Artpieces and Styles, created"
