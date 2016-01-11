@@ -1,4 +1,4 @@
-<%= form_for @artpiece do |f| %>
+<%= form_for @artpiece, multipart:true do |f| %>
   <div>
 
     <div class = "field">
@@ -20,6 +20,12 @@
     <div class = "field">
       <%= f.label :artpiece_id %> <br>
     </div>
+
+      <div class="form-group">
+      <%= f.label :image %>
+      <%= f.file_field :image, class: 'form-control'%>
+    </div>
+
 
   </div>
 

@@ -1,7 +1,6 @@
-<h3><center>Welcome</center></h3><br>
-<br>
-<h4> Browse our Art Gallery to see popular styles and commissions</h4>
-<h5> Create a profile to be hired as a Reproduction Artist! </h5>
+<h2><center>Browse our Art Gallery to see popular styles and commissions</center></h2><br>
+
+
 
 <%if signed_in? && !(created_style_selection?) %>
 <% create_reproartist_data %>
@@ -9,12 +8,14 @@
 
 
 <section>
-
+<center>
     <% @artpieces.each do |artpiece| %>
-    <h1><strong><%= artpiece.title %></strong></h1>
-    <p><%= artpiece.image%> </p>
+    <h3><strong><%= artpiece.title %></strong></h3>
+    <p><%= artpiece.image %></p>
     <p><%= artpiece.artist%> </p>
     <p><%= artpiece.style.name %> </p>
+    <br>
 
     <% end %>
+  </center>
 </section>
